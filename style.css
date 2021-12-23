@@ -1,0 +1,573 @@
+@font-face {
+  font-family: Chronicle-Display-SemiBold;
+  src: url("Fonts/Chronicle/SemiBold.otf");
+}
+
+@font-face {
+  font-family: Chronicle-Display-Bold;
+  src: url("Fonts/Chronicle/Black.otf");
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(Fonts/gilroy/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(Fonts/gilroy/Gilroy-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(Fonts/gilroy/Gilroy-Medium.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #0b1d26;
+  color: #ffffff;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 0.06%, #0B1D26 108.93%), url("Assets/background1.png");
+}
+
+header .nav {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+header .nav .logo p {
+  font-family: "Chronicle-Display-SemiBold", sans-serif;
+  font-size: 32px;
+}
+
+header .nav .nav-items a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+header .nav .account a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav .account a img {
+  height: 24px;
+  width: 24px;
+}
+
+header .nav .account a p {
+  color: #ffffff;
+  padding-left: 0.5rem;
+  font-size: 17px;
+}
+
+header .hero-text {
+  margin-top: 10rem;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .hero-text .socials {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .hero-text .socials a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0.5rem;
+}
+
+header .hero-text .socials a img {
+  height: 24px;
+  width: 24px;
+}
+
+header .hero-text .content {
+  width: 950px;
+}
+
+header .hero-text .content .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1.688rem;
+}
+
+header .hero-text .content .tagline .line {
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .hero-text .content .tagline .headline {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  padding-left: 1.688rem;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #fbd784;
+}
+
+header .hero-text .content h1 {
+  font-family: "Chronicle-Display-SemiBold", sans-serif;
+  font-size: 88px;
+  margin-bottom: 1.688rem;
+}
+
+header .hero-text .content .scroll a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header .hero-text .content .scroll a p {
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+header .hero-text .content .scroll a .arrow-down {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 1rem;
+}
+
+header .hero-text .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .hero-text .slider .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2rem;
+  text-align: right;
+  height: 208px;
+}
+
+header .hero-text .slider .title a {
+  padding-top: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .hero-text .slider .highlights .highlight-indicator {
+  background-color: #ffffff;
+  width: 3px;
+  height: 60px;
+}
+
+header .hero-text .slider .highlights .highlight {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 3px;
+  height: 180px;
+}
+
+.parallax {
+  margin-top: -17rem;
+  height: 1422px;
+  background: url("Assets/background2.png");
+}
+
+.parallax2 {
+  margin-top: -72rem;
+  height: 926px;
+  background: url("Assets/background3.png");
+}
+
+.parallax3 {
+  margin-top: -29rem;
+  height: 700px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(61.38%, #0B1D26));
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+
+main {
+  margin-top: -30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 1400px;
+  margin-bottom: 7.5rem;
+}
+
+main .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 720px;
+  margin-bottom: 12.5rem;
+}
+
+main .section h1 {
+  font-family: "Gilroy-Bold", sans-serif;
+  position: absolute;
+  font-size: 240px;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  left: 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .section .content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 5em;
+  z-index: 2;
+  width: 632px;
+}
+
+main .section .content .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1.688rem;
+}
+
+main .section .content .tagline .line {
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .section .content .tagline .headline {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  padding-left: 1.688rem;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #fbd784;
+}
+
+main .section .content h2 {
+  font-family: "Chronicle-Display-SemiBold", sans-serif;
+  font-size: 64px;
+  margin-bottom: 1.688rem;
+}
+
+main .section .content .details {
+  font-size: 18px;
+  font-family: inherit;
+  margin-bottom: 1.688rem;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+main .section .content .more a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .section .content .more a p {
+  font-family: inherit;
+  color: #fbd784;
+  font-size: 18px;
+}
+
+main .section .content .more a .arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 0.5rem;
+}
+
+main .section-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 720px;
+  margin-bottom: 12.5rem;
+}
+
+main .section-reverse h1 {
+  font-family: "Gilroy-Bold", sans-serif;
+  position: absolute;
+  font-size: 240px;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  right: 3em;
+}
+
+main .section-reverse .content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 3em;
+  z-index: 2;
+  width: 632px;
+  margin-left: 7rem;
+}
+
+main .section-reverse .content .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1.688rem;
+}
+
+main .section-reverse .content .tagline .line {
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .section-reverse .content .tagline .headline {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  padding-left: 1.688rem;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #fbd784;
+}
+
+main .section-reverse .content h2 {
+  font-family: "Chronicle-Display-SemiBold", sans-serif;
+  font-size: 64px;
+  margin-bottom: 1.688rem;
+}
+
+main .section-reverse .content .details {
+  font-size: 18px;
+  font-family: inherit;
+  margin-bottom: 1.688rem;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+main .section-reverse .content .more a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .section-reverse .content .more a p {
+  font-family: inherit;
+  color: #fbd784;
+  font-size: 18px;
+}
+
+main .section-reverse .content .more a .arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 0.5rem;
+}
+
+main .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .footer .main {
+  width: 303px;
+}
+
+main .footer .main .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+main .footer .main .logo p {
+  font-family: "Chronicle-Display-Bold", sans-serif;
+  font-size: 32px;
+}
+
+main .footer .main p {
+  font-size: 18px;
+}
+
+main .footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 32px;
+}
+
+main .footer .links h4 {
+  font-family: inherit;
+  font-size: 24px;
+  color: #fbd784;
+  margin-bottom: 1rem;
+}
+
+main .footer .links a {
+  font-family: "Gilroy-Medium", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+main .copyrights {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 32px;
+  -webkit-transform: translateY(-2.1em);
+          transform: translateY(-2.1em);
+}
+/*# sourceMappingURL=style.css.map */
