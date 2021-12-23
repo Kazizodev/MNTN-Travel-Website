@@ -6,3 +6,5 @@ This website is not responsive, it was made for 1920x1080 screen
 
 I DIDN'T design this website!
 You can find the design here: https://www.figmacrush.com/hiking-landing-page-template-for-figma/
+
+Live version of the website: https://kazizodev.github.io/MNTN-Travel-Website/
